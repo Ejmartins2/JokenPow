@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JO KEN PÔ</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>JO KEN PÔ</h1>
+        <p id="jogador1"> PLAYER:</p>
+        <div class="buttons">
+            <button id="rock" onclick="playHuman('rock')">&#x1F44A;</button>
+            <button id="paper" onclick="playHuman('paper')">&#x1F590;</button>
+            <button id="scissors" onclick="playHuman('scissors')">&#x270C;</button>
+        </div>
+         <p id="jogador2"> MACHINE:</p>
+        <div class="computerChoice">
+            <button id="rock2" onclick="playmachine('rock')">&#x1F44A;</button>
+            <button id="paper2" onclick="playmachine('paper')">&#x1F590;</button>
+            <button id="scissors2" onclick="playmachine('scissors')">&#x270C;</button>
+        </div>
+
+       
+        <div>
+            <button id="reset">Reiniciar</button>
+        </div>
+        <div class="result">
+            <p></p>
+        </div>
+        <div class="score">
+
+            <p> MY SCORE: <span id="score1">0</span></p>
+            <p> MACHINE SCORE: <span id="score2">0</span></p>
+        </div>
+      <div >
+        <img id="ganhou"  src="/img/vcganhou.jpg" alt="voce ganhou">
+      </div>
+        <div >
+        <img id="perdeu" src="/img/vcperdeu.jpg" alt="voce perdeu">
+      </div>
+      </div>
+
+    </div>
+   
+
+</body>
+ <script src="script.js"></script>
+</html>

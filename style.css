@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(img/pico-de-montanha-majestoso-em-paisagem-tranquila-de-inverno-gerada-por-ia.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: 100vh;
+}
+
+
+.container {
+
+    background-color: #78ebe3;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 700px;
+}
+
+.computerChoice {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+
+}
+
+button {
+    padding: 10px;
+    font-size: 50px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+
+}
+
+button:hover {
+    opacity: 0.5;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+
+#rock {
+    background-color: #6a4a40;
+
+}
+
+#paper {
+    background-color: #2d8a94;
+}
+
+#scissors {
+    background-color: #cc8459;
+}
+
+#reset {
+    background-color: #337494;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+#rock2 {
+    background-color: #6a4a40;
+
+}
+
+#paper2 {
+    background-color: #2d8a94;
+}
+
+#scissors2 {
+    background-color: #cc8459;
+}
+
+#jogador1 {
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+#jogador2 {
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+h1 {
+
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+
+.score {
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 30px;
+
+
+}
+
+#score1 {
+    color: #d74417;
+}
+
+#score2 {
+    color: #0a599d;
+}
+
+.result {
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+#ganhou {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+
+
+}
+
+#perdeu {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+}
